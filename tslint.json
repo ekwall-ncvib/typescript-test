@@ -1,7 +1,7 @@
 {
     "$schema": "./src/schemas/json/tslint.json",
-    //"defaultSeverity": "warning",    
-    "linterOptions": {        
+    //"defaultSeverity": "warning",
+    "linterOptions": {      
     },
     "extends": [
         //"tslint:recomended",
