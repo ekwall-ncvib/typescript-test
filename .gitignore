@@ -1,0 +1,15 @@
+*ReSharper.user
+_ReSharper*
+*.ReSharper
+*.suo
+*.csproj.user
+
+.vscode/
+.vs/
+bin/
+obj/
+dist/
+node_modules/
+
+package-lock.json
+
