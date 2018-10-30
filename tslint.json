@@ -1,11 +1,10 @@
 {
   "$schema": "./src/schemas/json/tslint.json",
-  //"defaultSeverity": "warning",
   "extends": [
-    "tslint:recomended"      
+    "tslint:latest"
   ],
   "rules": {
-    //"ban": [ true, [ "_", "extend" ], [ "_", "isNull" ], [ "_", "isDefined" ] ],
+    "ban": [ true, [ "_", "extend" ], [ "_", "isNull" ], [ "_", "isDefined" ] ],
     "class-name": true,
     "comment-format": [
       false
@@ -44,7 +43,7 @@
     "no-eval": true,
     "no-string-literal": true,
     "no-trailing-comma": true,
-    "no-trailing-whitespace": false,
+    "no-trailing-whitespace": true,
     "no-unused-expression": true,
     "no-unused-variable": true,
     "no-unreachable": true,
@@ -97,5 +96,5 @@
       "check-separator",
       "check-type"
     ]
-  }
+  }  
 }
