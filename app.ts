@@ -1,13 +1,18 @@
-console.log("Hello");
+console.log("Started");
 
-let apa: any = "hello";
-const nisse: number = 1;
-
-for (let i: number = 0; i < 10; i++) {
-    if (i === nisse) {
-        apa = "hello again";
-
+function nisse(): void {
+    try {
+        let mainDiv: HTMLElement = document.getElementById("mainDiv");
+        mainDiv.innerText = "Ready again";
+    } catch (error) {
+        console.log("error");
+    } finally {
+        console.log("done");
     }
 }
 
-console.log(apa);
+let mainDiv: HTMLElement = document.getElementById("mainDiv");
+
+mainDiv.innerHTML = "Ready";
+
+setTimeout(() => { nisse(); }, 2000);
