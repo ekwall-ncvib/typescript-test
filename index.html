@@ -1,12 +1,31 @@
 <html>
 <header>
+    <link href="style.css" rel="stylesheet" />
+    <script data-main="dist/tsc/main.js" src="dist/lib/require.js"></script>
 </header>
 
 <body>
-    <div id="mainDiv">Loading...</div>
+    
+    <div>
+        <canvas style="margin: 50px" width="320" height="160"></canvas>
+    </div>
+    <!-- <script src="./dist/tsc/point.js"></script>
+    <script src="./dist/tsc/square.js"></script>
+     -->
 
-    <script src="./dist/tsc/app.js"></script>
-    <!-- <script src="./dist/tsc/hello.js"></script> -->
+    <!-- <script src="./dist/tsc/app.module.js"></script> -->
+    <script>
+        // Set up any config you need (you might not need this)
+        requirejs.config({
+            basePath: "dist/tsc",
+            paths: {
+                app: "app"
+            }
+        });
+
+        // Tell RequireJS to load your main module (and its dependencies)
+        //require("AppModule");
+    </script>
 
 </body>
 
